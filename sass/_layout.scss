@@ -1,6 +1,8 @@
 body{
     display: flex;
     flex-direction: column;
+    font-family: 'Prompt', sans-serif;
+    
 }
 .global{
     display: flex;
@@ -15,6 +17,7 @@ body{
     flex: 0 1 900px;
     background-color: rgba(#000, .2);
     padding: 5rem 1rem;
+    text-align: center;
 }
 
 #entete{

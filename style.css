@@ -20,13 +20,12 @@ ce theme a ete developpe dans le cadre du cour 4w4
 /*
 
 */
-@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap");
 :root {
-  --couleur-arriere-entete:#ccc;
-  --couleur-arriere-accueil:#ebb;
-  --couleur-arriere-galerie:#9f4f4f;
-  --couleur-arriere-evenement:#dd1;
-  --couleur-arriere-footer:#aaa;
+  --couleur-arriere-entete:#efe1ff;
+  --couleur-arriere-accueil:#d8bafb;
+  --couleur-arriere-galerie:#c497f8;
+  --couleur-arriere-evenement:#9a5be2;
+  --couleur-arriere-footer:#7f41c6;
 }
 
 /* ///////////////////////////////////////////*/
@@ -40,8 +39,32 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/clamp
 */
 h1 {
   font-size: clamp(1rem, 2.5vw, 2rem);
-  font-family: "Prompt", sans-serif;
   color: rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  font-size: clamp(1rem, -0.5714rem + 6.2857vw, 3.75rem);
+  color: rgba(9, 41, 24, 0.7);
+}
+
+h3 {
+  font-size: clamp(1rem, 2.5vw, 1.8rem);
+  color: rgb(75, 149, 214);
+}
+
+h4 {
+  font-size: clamp(1rem, 2.5vw, 1.6rem);
+  color: rgb(176, 203, 226);
+}
+
+h5 {
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  color: rgb(105, 126, 145);
+}
+
+h6 {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  color: rgb(27, 77, 120);
 }
 
 /* ///////////////////////////////////////////*/
@@ -50,6 +73,7 @@ h1 {
 body {
   display: flex;
   flex-direction: column;
+  font-family: "Prompt", sans-serif;
 }
 
 .global {
@@ -64,6 +88,7 @@ body {
   flex: 0 1 900px;
   background-color: rgba(0, 0, 0, 0.2);
   padding: 5rem 1rem;
+  text-align: center;
 }
 
 #entete {
