@@ -26,6 +26,8 @@ ce theme a ete developpe dans le cadre du cour 4w4
   --couleur-arriere-galerie:#c497f8;
   --couleur-arriere-evenement:#9a5be2;
   --couleur-arriere-footer:#7f41c6;
+  --couleur-h2:#041d31;
+  --couleur-h1:#882b2b;
 }
 
 /* ///////////////////////////////////////////*/
@@ -39,12 +41,19 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/clamp
 */
 h1 {
   font-size: clamp(1rem, 2.5vw, 2rem);
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--couleur-h1);
 }
 
 h2 {
   font-size: clamp(1rem, -0.5714rem + 6.2857vw, 3.75rem);
-  color: rgba(9, 41, 24, 0.7);
+  color: rgba(73, 168, 212, 0.7);
+}
+
+h2:hover {
+  border: 1px solid #000;
+  border-radius: 50px;
+  background-color: #000;
+  color: var(--couleur-h2);
 }
 
 h3 {
@@ -89,6 +98,11 @@ body {
   background-color: rgba(0, 0, 0, 0.2);
   padding: 5rem 1rem;
   text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 25px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
 }
 
 #entete {
