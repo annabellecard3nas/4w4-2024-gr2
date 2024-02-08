@@ -5,10 +5,14 @@ https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjUwMHB4Iiwi
 https://developer.mozilla.org/en-US/docs/Web/CSS/clamp 
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+
 h1{
     font-size: clamp(1rem, 2.5vw, 2rem); 
+    font-family: 'Prompt', sans-serif;
+    color: rgba(#000, .5);
 }
-h2{}
+h2{  }
 h3{}
 h4{}
 h5{}
