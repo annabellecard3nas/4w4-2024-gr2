@@ -350,4 +350,24 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/clamp
 */
 h1 {
   font-size: clamp(1rem, 2.5vw, 2rem);
+}
+
+/* ///////////////////////////////////////////*/
+/*regles de pagination*/
+/* ///////////////////////////////////////////*/
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.global {
+  display: flex;
+  justify-content: center;
+}
+
+.global > section,
+.global > header,
+.global > footer {
+  width: 1100px;
+  border: 1px solid #aaa;
 }/*# sourceMappingURL=style.css.map */
