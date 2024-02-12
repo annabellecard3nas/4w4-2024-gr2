@@ -5,11 +5,30 @@
 */
 :root{
 
-    --couleur-arriere-entete:#efe1ff;
+ /*   --couleur-arriere-entete:#efe1ff;
     --couleur-arriere-accueil:#d8bafb;
     --couleur-arriere-galerie:#c497f8;
     --couleur-arriere-evenement:#9a5be2;
     --couleur-arriere-footer:#7f41c6;
-    --couleur-h2:#041d31;
-    --couleur-h1:#882b2b;
+
+  */  
+    
+   
+
+
+
+
+    --couleur-arriere-entete:hsl(0,100%,50%);
+    --couleur-arriere-accueil:hsl(60,100%,50%);
+    --couleur-arriere-galerie:hsl(120,100%,50%);
+    --couleur-arriere-evenement:hsl(180,100%,50%);
+    --couleur-arriere-footer:hsl(240,100%,50%);
+
+
+    --couleur-entete:hsl(0,100%,15%);
+    --couleur-accueil:hsl(60,100%,15%);
+    --couleur-galerie:hsl(120,100%,15%);
+    --couleur-evenement:hsl(180,100%,15%);
+    --couleur-footer:hsl(240,100%,15%);
 }
+

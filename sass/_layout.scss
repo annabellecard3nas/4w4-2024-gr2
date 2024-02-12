@@ -15,7 +15,7 @@ body{
 .global > footer{
 //flex :grow shrink basis
     flex: 0 1 900px;
-    background-color: rgba(#000, .2);
+    background-color: rgba(#000, 0.5);
     padding: 5rem 1rem;
     text-align: center;
     background: rgba(255, 255, 255, 0.2);
@@ -23,20 +23,26 @@ body{
     border-radius: 25px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
+
 }
 
 #entete{
     background-color: var(--couleur-arriere-entete);
+    color: var(--couleur-entete);
 }
 #accueil{
     background-color: var(--couleur-arriere-accueil);
+    color: var(--couleur-accueil);
 }
 #galerie{
     background-color: var(--couleur-arriere-galerie);
+    color: var(--couleur-galerie);
 }
 #evenement{
     background-color: var(--couleur-arriere-evenement);
+    color: var(--couleur-evenement);
 }
 #footer{
     background-color: var(--couleur-arriere-footer);
+    color: var(--couleur-footer);
 }

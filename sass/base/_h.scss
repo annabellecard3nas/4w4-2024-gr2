@@ -8,17 +8,17 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/clamp
 
 h1{
     font-size: clamp(1rem, 2.5vw, 2rem); 
-    color: var(--couleur-h1);
+ 
 }
 h2{ font-size: clamp(1rem, -0.5714rem + 6.2857vw, 3.75rem);
-    color : rgba(#49a8d4, .7);
+  
 
 }
 h2:hover{
     border: 1px solid #000;
     border-radius: 50px;
     background-color: #000;
-    color: var(--couleur-h2);
+    color: #000
 }
 h3{
     font-size: clamp(1rem, 2.5vw, 1.8rem);

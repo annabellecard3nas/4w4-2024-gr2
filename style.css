@@ -21,13 +21,23 @@ ce theme a ete developpe dans le cadre du cour 4w4
 
 */
 :root {
-  --couleur-arriere-entete:#efe1ff;
-  --couleur-arriere-accueil:#d8bafb;
-  --couleur-arriere-galerie:#c497f8;
-  --couleur-arriere-evenement:#9a5be2;
-  --couleur-arriere-footer:#7f41c6;
-  --couleur-h2:#041d31;
-  --couleur-h1:#882b2b;
+  /*   --couleur-arriere-entete:#efe1ff;
+     --couleur-arriere-accueil:#d8bafb;
+     --couleur-arriere-galerie:#c497f8;
+     --couleur-arriere-evenement:#9a5be2;
+     --couleur-arriere-footer:#7f41c6;
+
+   */
+  --couleur-arriere-entete:hsl(0,100%,50%);
+  --couleur-arriere-accueil:hsl(60,100%,50%);
+  --couleur-arriere-galerie:hsl(120,100%,50%);
+  --couleur-arriere-evenement:hsl(180,100%,50%);
+  --couleur-arriere-footer:hsl(240,100%,50%);
+  --couleur-entete:hsl(0,100%,15%);
+  --couleur-accueil:hsl(60,100%,15%);
+  --couleur-galerie:hsl(120,100%,15%);
+  --couleur-evenement:hsl(180,100%,15%);
+  --couleur-footer:hsl(240,100%,15%);
 }
 
 /* ///////////////////////////////////////////*/
@@ -41,19 +51,17 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/clamp
 */
 h1 {
   font-size: clamp(1rem, 2.5vw, 2rem);
-  color: var(--couleur-h1);
 }
 
 h2 {
   font-size: clamp(1rem, -0.5714rem + 6.2857vw, 3.75rem);
-  color: rgba(73, 168, 212, 0.7);
 }
 
 h2:hover {
   border: 1px solid #000;
   border-radius: 50px;
   background-color: #000;
-  color: var(--couleur-h2);
+  color: #000;
 }
 
 h3 {
@@ -95,7 +103,7 @@ body {
 .global > header,
 .global > footer {
   flex: 0 1 900px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 5rem 1rem;
   text-align: center;
   background: rgba(255, 255, 255, 0.2);
@@ -107,20 +115,25 @@ body {
 
 #entete {
   background-color: var(--couleur-arriere-entete);
+  color: var(--couleur-entete);
 }
 
 #accueil {
   background-color: var(--couleur-arriere-accueil);
+  color: var(--couleur-accueil);
 }
 
 #galerie {
   background-color: var(--couleur-arriere-galerie);
+  color: var(--couleur-galerie);
 }
 
 #evenement {
   background-color: var(--couleur-arriere-evenement);
+  color: var(--couleur-evenement);
 }
 
 #footer {
   background-color: var(--couleur-arriere-footer);
+  color: var(--couleur-footer);
 }/*# sourceMappingURL=style.css.map */
