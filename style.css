@@ -31,9 +31,8 @@ ce theme a ete developpe dans le cadre du cour 4w4
   --nb-element:5;
   --increment-angle: calc(360/var(--nb-element));
   /* 360/5 =72 */
-  --angle-initial: 180;
-  --hu1: var(--angle-initial);
-  --hu2:calc(var(--hu1) + var(--increment-angle));
+  --hu1: 40;
+  --hu2: calc(var(--hu1) + 180);
   --hu3:calc(var(--hu2) + var(--increment-angle));
   --hu4:calc(var(--hu3) + var(--increment-angle));
   --hu5:calc(var(--hu4) + var(--increment-angle));
@@ -41,16 +40,26 @@ ce theme a ete developpe dans le cadre du cour 4w4
   --l-arriere: 50%;
   --s-couleur:100%;
   --l-couleur:15%;
+  /*
   --couleur-arriere-entete:hsl(var(--hu1),var(--s-couleur-arriere),var(--l-arriere));
   --couleur-arriere-accueil:hsl(var(--hu2),var(--s-couleur-arriere),var(--l-arriere));
   --couleur-arriere-galerie:hsl(var(--hu3),var(--s-couleur-arriere),var(--l-arriere));
   --couleur-arriere-evenement:hsl(var(--hu4),var(--s-couleur-arriere),var(--l-arriere));
   --couleur-arriere-footer:hsl(var(--hu5),var(--s-couleur-arriere),var(--l-arriere));
+
+
   --couleur-entete:hsl(var(--hu1),var(--s-couleur),var(--l-couleur));
   --couleur-accueil:hsl(var(--hu2),var(--s-couleur),var(--l-couleur));
   --couleur-galerie:hsl(var(--hu3),var(--s-couleur),var(--l-couleur));
   --couleur-evenement:hsl(var(--hu4),var(--s-couleur),var(--l-couleur));
   --couleur-footer:hsl(var(--hu5),var(--s-couleur),var(--l-couleur));
+  */
+  --couleur-arriere-entete:hsl(var(--hu1),var(--s-couleur-arriere), 60%);
+  --couleur-arriere-accueil:hsl(var(--hu1),var(--s-couleur-arriere), 65%);
+  --couleur-arriere-galerie:hsl(var(--hu2),var(--s-couleur-arriere), 70%);
+  --couleur-arriere-evenement:hsl(var(--hu1),var(--s-couleur-arriere), 75%);
+  --couleur-arriere-footer:hsl(var(--hu1),var(--s-couleur-arriere), 80%);
+  --couleur-citation:hsl(211, 76%, 32%);
 }
 
 /* ///////////////////////////////////////////*/
@@ -116,7 +125,6 @@ body {
 .global > header,
 .global > footer {
   flex: 0 1 900px;
-  background-color: rgba(0, 0, 0, 0.05);
   padding: 5rem 1rem;
   text-align: center;
 }
@@ -124,6 +132,7 @@ body {
 #entete {
   background-color: var(--couleur-arriere-entete);
   color: var(--couleur-entete);
+  position: relative;
 }
 
 #accueil {
@@ -132,16 +141,81 @@ body {
 }
 
 #galerie {
-  background-color: var(--couleur-arriere-galerie);
   color: var(--couleur-galerie);
+  z-index: 1;
+  background: linear-gradient(180deg, var(--couleur-arriere-accueil), var(--couleur-arriere-evenement));
 }
 
 #evenement {
   background-color: var(--couleur-arriere-evenement);
   color: var(--couleur-evenement);
+  position: relative;
 }
 
 #footer {
   background-color: var(--couleur-arriere-footer);
   color: var(--couleur-footer);
+}
+
+/* ///////////////////////////////////////////*/
+/*importer scss de vague*/
+/* ///////////////////////////////////////////*/
+.vague {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.vague svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 87px;
+}
+
+.diagonal {
+  position: relative;
+  isolation: isolate;
+}
+
+.diagonal::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  transform: skewY(-5deg);
+  background-color: var(--couleur-arriere-galerie);
+}
+
+button {
+  background: #5E5DF0;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+
+blockquote {
+  background-color: var(--couleur-citation);
+  border-radius: 10px;
 }/*# sourceMappingURL=style.css.map */

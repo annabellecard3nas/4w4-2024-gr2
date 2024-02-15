@@ -30,3 +30,14 @@ ce theme a ete developpe dans le cadre du cour 4w4
 /*regles de pagination*/
 /* ///////////////////////////////////////////*/
 @import "layout";
+
+/* ///////////////////////////////////////////*/
+/*importer scss de vague*/
+/* ///////////////////////////////////////////*/
+@import "effet/vague";
+
+@import "effet/diagonal";
+
+@import "bouton";
+
+@import "citation";
