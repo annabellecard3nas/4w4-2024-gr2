@@ -38,6 +38,17 @@ ce theme a ete developpe dans le cadre du cour 4w4
 
 @import "effet/diagonal";
 
-@import "bouton";
+@import "base/bouton";
 
 @import "citation";
+
+@import "entete";
+
+@import "footer";
+
+@import "base/lien";
+
+@import "base/images";
+
+@import "composant/recherche";
+@import "composant/sociaux";

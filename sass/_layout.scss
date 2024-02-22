@@ -22,6 +22,10 @@ body{
 
 }
 
+.global > header {
+    flex: 1;
+}
+
 #entete{
     background-color: var(--couleur-arriere-entete);
     color: var(--couleur-entete);

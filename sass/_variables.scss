@@ -20,7 +20,7 @@
     --hu1: 40;
     
     
-    --hu2 : calc(var(--hu1) + 180);
+    --hu2 : calc(var(--hu1) + 170);
     
    //--hu2:calc(var(--hu1) + var(--increment-angle));
    --hu3:calc(var(--hu2) + var(--increment-angle));
@@ -58,11 +58,13 @@
 
     --couleur-arriere-entete:hsl(var(--hu1),var(--s-couleur-arriere), 60%);
     --couleur-arriere-accueil:hsl(var(--hu1),var(--s-couleur-arriere), 65%);
-    --couleur-arriere-galerie:hsl(var(--hu2),var(--s-couleur-arriere), 70%);
+    --couleur-arriere-galerie:hsl(var(--hu2),var(--s-couleur-arriere), 45%);
     --couleur-arriere-evenement:hsl(var(--hu1),var(--s-couleur-arriere), 75%);
     --couleur-arriere-footer:hsl(var(--hu1),var(--s-couleur-arriere), 80%);
 
-    --couleur-citation:hsl(211, 76%, 32%);
+
+
+    
     
 
 }
