@@ -32,7 +32,7 @@ ce theme a ete developpe dans le cadre du cour 4w4
   --increment-angle: calc(360/var(--nb-element));
   /* 360/5 =72 */
   --hu1: 40;
-  --hu2: calc(var(--hu1) + 180);
+  --hu2: calc(var(--hu1) + 170);
   --hu3:calc(var(--hu2) + var(--increment-angle));
   --hu4:calc(var(--hu3) + var(--increment-angle));
   --hu5:calc(var(--hu4) + var(--increment-angle));
@@ -56,10 +56,9 @@ ce theme a ete developpe dans le cadre du cour 4w4
   */
   --couleur-arriere-entete:hsl(var(--hu1),var(--s-couleur-arriere), 60%);
   --couleur-arriere-accueil:hsl(var(--hu1),var(--s-couleur-arriere), 65%);
-  --couleur-arriere-galerie:hsl(var(--hu2),var(--s-couleur-arriere), 70%);
+  --couleur-arriere-galerie:hsl(var(--hu2),var(--s-couleur-arriere), 45%);
   --couleur-arriere-evenement:hsl(var(--hu1),var(--s-couleur-arriere), 75%);
   --couleur-arriere-footer:hsl(var(--hu1),var(--s-couleur-arriere), 80%);
-  --couleur-citation:hsl(211, 76%, 32%);
 }
 
 /* ///////////////////////////////////////////*/
@@ -73,17 +72,15 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/clamp
 */
 h1 {
   font-size: clamp(1rem, 2.5vw, 2rem);
+  color: rgb(27, 77, 120);
 }
 
 h2 {
   font-size: clamp(1rem, -0.5714rem + 6.2857vw, 3.75rem);
+  color: rgb(52, 106, 153);
 }
-
-h2:hover {
-  border: 1px solid #000;
-  border-radius: 50px;
-  background-color: #000;
-  color: #000;
+#galerie h2 {
+  color: white;
 }
 
 h3 {
@@ -127,6 +124,10 @@ body {
   flex: 0 1 900px;
   padding: 5rem 1rem;
   text-align: center;
+}
+
+.global > header {
+  flex: 1;
 }
 
 #entete {
@@ -194,8 +195,8 @@ body {
   background-color: var(--couleur-arriere-galerie);
 }
 
-button {
-  background: #5E5DF0;
+.buttonn_evenement {
+  background-image: linear-gradient(#5E5DF0, #7a42b9);
   border-radius: 999px;
   box-shadow: #5E5DF0 0 10px 20px -10px;
   box-sizing: border-box;
@@ -206,7 +207,97 @@ button {
   line-height: 24px;
   opacity: 1;
   outline: 0 solid transparent;
-  padding: 8px 18px;
+  padding: 12px 24px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+  transition: transform 0.2s;
+}
+.buttonn_evenement:hover {
+  background-image: linear-gradient(rgb(129, 56, 197), rgb(42, 56, 183));
+  box-shadow: #5E5DF0 0 3px 15px 3px;
+  transform: translateY(-5px);
+}
+blockquote {
+  background: rgba(226, 229, 231, 0.11);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 1.5rem 2rem 1.5rem 2rem;
+  transition: transform 0.2s;
+  color: white;
+}
+blockquote:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.309);
+}
+
+.entete__header {
+  background-image: url("../images/logo.png");
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  background-size: 25%;
+}
+
+@media screen and (max-width: 600px) {
+  .entete__header {
+    background-position: 50% 50%;
+  }
+}
+.footer__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+
+a {
+  color: rgb(23, 118, 186);
+}
+a:hover, a:focus {
+  color: rgb(26, 65, 121);
+}
+a:visited {
+  color: rgb(18, 101, 184);
+}
+
+.recherche {
+  display: flex;
+  justify-content: center;
+}
+
+.recherche__input::placeholder {
+  padding-left: 0.5rem;
+}
+
+.recherche__input {
+  display: block;
+  border-radius: 10px 2px 2px 10px;
+  border: transparent;
+}
+
+.recherche__button path {
+  color: rgb(255, 255, 255);
+}
+
+.recherche__button {
+  background-image: linear-gradient(#6161f2, #7a42b9);
+  border-radius: 2px 10px 10px 2px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -215,7 +306,27 @@ button {
   border: 0;
 }
 
-blockquote {
-  background-color: var(--couleur-citation);
-  border-radius: 10px;
+.sociaux {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.sociaux path {
+  color: rgb(40, 65, 155);
+}
+
+.carte {
+  border: 1px solid #aaa;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 1 25%;
+  background-color: vhsl(var(--));
+}
+
+.section__cours {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }/*# sourceMappingURL=style.css.map */

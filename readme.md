@@ -20,9 +20,9 @@ le bouton reagit au evenement:hover et :active
 À realiser:
 
 - ameliorer l'entete
-- ajouter image
-- ajouter des liens
-- ajouter un bouton
+- ajouter image x
+- ajouter des liens 
+- ajouter un bouton x
 - ameliorer pagination
 - ajouter de nouveau elements HTML
 - une github-page

@@ -1,0 +1,14 @@
+.carte{
+    border:1px solid #aaa;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex:0 1 25%;
+    background-color: vhsl(var(--));
+}
+
+.section__cours{
+    display: flex;
+    flex-wrap: wrap;
+    gap : 1rem;
+}

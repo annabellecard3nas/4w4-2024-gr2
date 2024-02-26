@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="normalize.css">
-            <link rel="stylesheet" href="style.css">
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/normalize.css';?>">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/style.css';?>">
+            
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -29,8 +31,38 @@
     <div id="accueil" class="global">
         <section class="accueil__section">
             <h2>Accueil</h2>
-            <p>Lorem ipsum, dolor sit <a href="">amet consectetur adipisicing elit. </a> Eaque velit tempora dolore neque et quae dicta ullam? Repellendus illum recusandae accusantium quo perferendis. Illum officiis doloribus minus laboriosam. Harum, vel!</p>
-            
+            <div class="section_cours"> 
+                <?php 
+                //     if(have_posts()){
+                //         while(have_posts()){
+                //         the_post();
+                //         the_title('<p>','</p>');
+                //         the_content();
+                        
+                //     }
+                // }
+                if (have_posts()):
+                while(have_posts()):
+                the_post();
+                the_title();
+                echo wp_trim_words(get_the_content(),10);
+                endwhile;
+                endif;
+                ?>
+            </div>
+
+         
+            <div class="touteCarte">
+            <div class="cartes">
+                <p>Lorem ipsum, dolor sit amet consectetur. Expedita exc sit modi cupiditate dum mollitia voluptatum quo blanditiis exercitationem quos molestiae?</p>
+            </div>
+            <div class="cartes">
+                <p>Lorem ipsum, dolor sit amet consectetur. Expedita exc sit modi cupiditate dum mollitia voluptatum quo blanditiis exercitationem quos molestiae?</p>
+            </div>
+            <div class="cartes">
+                <p>Lorem ipsum, dolor sit amet consectetur. Expedita exc sit modi cupiditate dum mollitia voluptatum quo blanditiis exercitationem quos molestiae?</p>
+            </div>
+            </div>
         </section>
     </div>
     <div id="galerie" class="global diagonal">
