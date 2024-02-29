@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--<link rel="stylesheet" href="normalize.css">-->
+    <!--<link rel="stylesheet" href="style.css">-->
+
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/normalize.css';?>">
     <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/style.css';?>">
@@ -46,16 +50,24 @@
         */
             ?>      
             <?php if (have_posts()):
-                while(have_posts()): the_post(); ?>
+                while(have_posts()): the_post(); 
+                $titre = get_the_title();
+                $sigle = substr($titre,0,7); 
+                $nomCours = substr($titre,8,-6);
+                $tempCours=substr($titre,-6);             
+                //$strpos()  cest un string position
+                ?>
 
                 <div class="carte">
-                    <h4><?php the_title(); ?></h4>
-                    <p><?php echo wp_trim_words(get_the_content(),10); ?></p>
+                    <h5><?php echo $sigle; ?></h5>
+                    <h4><?php echo $nomCours; ?></h4>
+                    <h3><?php echo $tempCours; ?></h3>
+                    <p><?php echo wp_trim_words(get_the_content(),30); ?></p>
                 </div>
             <?php endwhile; ?>
             <?php endif; ?>
-            </div>
 
+            </div>
         </section>
     </div>
     <div id="galerie" class="global diagonal">

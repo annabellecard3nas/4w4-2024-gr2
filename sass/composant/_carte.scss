@@ -3,11 +3,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex:0 1 25%;
-    background-color: vhsl(var(--));
+    flex:0 1 23%;
+    background-color: rgb(54, 107, 186);
 }
 
-.section__cours{
+.section_cours{
     display: flex;
     flex-wrap: wrap;
     gap : 1rem;
