@@ -32,37 +32,30 @@
         <section class="accueil__section">
             <h2>Accueil</h2>
             <div class="section_cours"> 
-                <?php 
-                //     if(have_posts()){
-                //         while(have_posts()){
-                //         the_post();
-                //         the_title('<p>','</p>');
-                //         the_content();
-                        
-                //     }
-                // }
-                if (have_posts()):
-                while(have_posts()):
-                the_post();
-                the_title();
-                echo wp_trim_words(get_the_content(),10);
-                endwhile;
-                endif;
-                ?>
+            <?php
+        /*
+                if (have_posts()){
+                    while(have_posts()){
+                        the_post();
+                        the_title('<p>','</p>');
+                        $contenu = get_the_content();
+                        $contenu = wp_trim_words($contenu, 10);
+                        echo $contenu;
+                    }
+                }
+        */
+            ?>      
+            <?php if (have_posts()):
+                while(have_posts()): the_post(); ?>
+
+                <div class="carte">
+                    <h4><?php the_title(); ?></h4>
+                    <p><?php echo wp_trim_words(get_the_content(),10); ?></p>
+                </div>
+            <?php endwhile; ?>
+            <?php endif; ?>
             </div>
 
-         
-            <div class="touteCarte">
-            <div class="cartes">
-                <p>Lorem ipsum, dolor sit amet consectetur. Expedita exc sit modi cupiditate dum mollitia voluptatum quo blanditiis exercitationem quos molestiae?</p>
-            </div>
-            <div class="cartes">
-                <p>Lorem ipsum, dolor sit amet consectetur. Expedita exc sit modi cupiditate dum mollitia voluptatum quo blanditiis exercitationem quos molestiae?</p>
-            </div>
-            <div class="cartes">
-                <p>Lorem ipsum, dolor sit amet consectetur. Expedita exc sit modi cupiditate dum mollitia voluptatum quo blanditiis exercitationem quos molestiae?</p>
-            </div>
-            </div>
         </section>
     </div>
     <div id="galerie" class="global diagonal">

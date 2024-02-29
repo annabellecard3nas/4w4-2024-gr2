@@ -238,7 +238,7 @@ blockquote:hover {
 }
 
 .entete__header {
-  background-image: url("../images/logo.png");
+  background-image: url("./images/logo.png");
   background-repeat: no-repeat;
   background-position: 100% 50%;
   background-size: 25%;
