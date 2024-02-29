@@ -21,13 +21,9 @@
 - Chacune des cartes de cours sera formatés en en utilisant les flex box
 
 ### Barème de correction
-- Organistion du code, 3 commits minimum (point)
-- Résultat sous forme de github page (.5 point)
+- Organistion du code, 3 commits minimum (1 point)
+- Résultat sous forme de github page avec index.htm (.5 point)
 - Design global de la page (.5 point)
-
-
-
-
 
 
 ### ma github page
