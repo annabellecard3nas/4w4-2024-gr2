@@ -61,6 +61,79 @@ ce theme a ete developpe dans le cadre du cour 4w4
   --couleur-arriere-footer:hsl(var(--hu1),var(--s-couleur-arriere), 80%);
 }
 
+#entete {
+  --_couleur-arriere: hsl(var(--hu1), var(--s-couleur-arriere), 60%);
+  --_couleur: hsl(var(--hu1), var(--s-couleur-arriere), 20%);
+  --_couleur-ombrage: hsl(var(--hu1), var(--s-couleur-arriere), 50%);
+  /* Couleur du bouton */
+  --_couleur-bouton-1-active: hsl(var(--hu2),var(--s-couleur-arriere), 35%);
+  --_couleur-bouton-2-active: hsl(var(--hu2),var(--s-couleur-arriere), 45%);
+  --_couleur-bouton-1: hsl(var(--hu2),var(--s-couleur-arriere), 55%);
+  --_couleur-bouton-2: hsl(var(--hu2),var(--s-couleur-arriere), 65%);
+  --_couleur-bouton-hover-1: hsl(var(--hu2),var(--s-couleur-arriere), 75%);
+  --_couleur-bouton-hover-2: hsl(var(--hu2),var(--s-couleur-arriere), 80%);
+  --_couleur-bouton-text: hsl(var(--hu2),var(--s-couleur-arriere), 20%);
+  --_couleur-bouton-2: hsl(var(--hu2),var(--s-couleur-arriere), 49%);
+  --_couleur-arriere-vague: hsl(var(--hu1), var(--s-couleur-arriere), 60%);
+}
+
+#accueil {
+  --_couleur-arriere: hsl(var(--hu1),var(--s-couleur-arriere), 65%);
+  --_couleur: hsl(var(--hu1),var(--s-couleur-arriere), 25%);
+  /* Couleur des liens */
+  --_couleur-lien: hsl(var(--hu2),var(--s-couleur-arriere), 40%);
+  --_couleur-lien-hover: hsl(var(--hu1),var(--s-couleur-arriere), 45%);
+  --_couleur-lien-visited: hsl(var(--hu3),var(--s-couleur-arriere), 50%);
+  /* Couleurs blockquote */
+  --_couleur-arriere-blockquote: hsl(var(--hu1),var(--s-couleur-arriere), 80%);
+  --_couleur-blockquote: hsl(var(--hu1),var(--s-couleur-arriere), 20%);
+  --_couleur-bordure: hsl(var(--hu1), var(--s-couleur-arriere), 70%);
+  --_couleur-blockquote-first-letter: hsl(var(--hu1),var(--s-couleur-arriere), 60%);
+}
+
+#galerie {
+  --_couleur-arriere: hsl(var(--hu2),var(--s-couleur-arriere), 75%);
+  --_couleur: hsl(var(--hu2),var(--s-couleur-arriere), 35%);
+  /* Couleur des liens */
+  --_couleur-lien: hsl(var(--hu2),var(--s-couleur-arriere), 40%);
+  --_couleur-lien-hover: hsl(var(--hu1),var(--s-couleur-arriere), 45%);
+  --_couleur-lien-visited: hsl(var(--hu3),var(--s-couleur-arriere), 50%);
+  /* Couleurs blockquote */
+  --_couleur-arriere-blockquote: hsl(var(--hu1),var(--s-couleur-arriere), 80%);
+  --_couleur-blockquote: hsl(var(--hu1),var(--s-couleur-arriere), 20%);
+  --_couleur-bordure: hsl(var(--hu1), var(--s-couleur-arriere), 70%);
+  --_couleur-blockquote-first-letter: hsl(var(--hu1),var(--s-couleur-arriere), 60%);
+}
+
+#evenement {
+  --_couleur-arriere: hsl(var(--hu3),var(--s-couleur-arriere), 70%);
+  --_couleur: hsl(var(--hu1),var(--s-couleur-arriere), 30%);
+  /* Couleur des liens */
+  --_couleur-lien: hsl(var(--hu2),var(--s-couleur-arriere), 40%);
+  --_couleur-lien-hover: hsl(var(--hu1),var(--s-couleur-arriere), 45%);
+  --_couleur-lien-visited: hsl(var(--hu3),var(--s-couleur-arriere), 50%);
+  /* Couleurs blockquote */
+  --_couleur-arriere-blockquote: hsl(var(--hu1),var(--s-couleur-arriere), 80%);
+  --_couleur-blockquote: hsl(var(--hu1),var(--s-couleur-arriere), 20%);
+  --_couleur-bordure: hsl(var(--hu1), var(--s-couleur-arriere), 70%);
+  --_couleur-blockquote-first-letter: hsl(var(--hu1),var(--s-couleur-arriere), 60%);
+  --_couleur-arriere-vague: hsl(var(--hu1), var(--s-couleur-arriere), 80%);
+}
+
+#footer {
+  --_couleur-arriere: hsl(var(--hu1),var(--s-couleur-arriere), 80%);
+  --_couleur: hsl(var(--hu1),var(--s-couleur-arriere), 45%);
+  /* Couleur des liens */
+  --_couleur-lien: hsl(var(--hu2),var(--s-couleur-arriere), 40%);
+  --_couleur-lien-hover: hsl(var(--hu1),var(--s-couleur-arriere), 45%);
+  --_couleur-lien-visited: hsl(var(--hu3),var(--s-couleur-arriere), 50%);
+  /* Couleurs blockquote */
+  --_couleur-arriere-blockquote: hsl(var(--hu1),var(--s-couleur-arriere), 80%);
+  --_couleur-blockquote: hsl(var(--hu1),var(--s-couleur-arriere), 20%);
+  --_couleur-bordure: hsl(var(--hu1), var(--s-couleur-arriere), 70%);
+  --_couleur-blockquote-first-letter: hsl(var(--hu1),var(--s-couleur-arriere), 60%);
+}
+
 /* ///////////////////////////////////////////*/
 /*regles de base*/
 /* ///////////////////////////////////////////*/
@@ -157,19 +230,19 @@ body {
 .global {
   display: flex;
   justify-content: center;
-  min-height: 40vh;
 }
 
 .global > section,
-.global > header,
 .global > footer {
   flex: 0 1 900px;
   padding: 5rem 1rem;
   text-align: center;
 }
 
-.global > header {
-  flex: 1;
+.entete__menu, .entete__header {
+  flex: 0 1 1500px;
+  position: relative;
+  padding: 1.5rem;
 }
 
 #entete {
@@ -218,6 +291,10 @@ body {
   display: block;
   width: calc(100% + 1.3px);
   height: 87px;
+}
+
+.remplissage {
+  fill: var(--_couleur-arriere-vague);
 }
 
 .diagonal {
@@ -348,19 +425,84 @@ blockquote:hover {
   gap: 1rem;
 }
 
-.menu-cours-container {
-  border: 1px solid #aaa;
+.menu-principal-container {
+  background: rgba(220, 220, 220, 0.297);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.2s;
+  color: white;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media screen and (min-width: 700px) {
+  .menu-principal-container {
+    position: static;
+    translate: translateX(0);
+  }
 }
 
-.menu {
+#menu-principal {
   display: flex;
+  flex-direction: column;
   list-style-type: none;
-  justify-content: space-around;
+  justify-content: flex-start;
+  align-items: flex-start;
   gap: 1rem;
+}
+@media screen and (min-width: 700px) {
+  #menu-principal {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
 }
 
 .menu-item {
   display: flex;
+  padding: 1rem;
+  position: relative;
+  left: 1rem;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu-item a:hover {
+  background-color: rgba(116, 114, 114, 0.426);
+  border-radius: 25px;
+  color: white;
+}
+
+#chk_burger {
+  display: none;
+  z-index: 3;
+}
+
+#burger {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media screen and (min-width: 700px) {
+  #burger {
+    display: none;
+  }
+}
+
+#chk_burger:checked ~ .menu-principal-container {
+  transform: translateX(0);
+}
+
+#chk_burger:checked {
+  transform: rotate(45deg);
 }
 
 .bgc-texte {

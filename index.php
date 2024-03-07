@@ -1,40 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<?php get_header() ?>
 
-    <!--<link rel="stylesheet" href="normalize.css">-->
-    <!--<link rel="stylesheet" href="style.css">-->
-
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/normalize.css';?>">
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/style.css';?>">
-            
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
-    <title>Document</title>
-</head>
-<body>
-    <div id="menu" class="global">
-        <div class="entete_menu">
-            <?php wp_nav_menu(); ?>
-        </div>
-    </div>
     <div id="entete" class="global">
-        <header class="entete__header">
+
+        <section class="entete__header">
+
             <h1 class="bgc-text">Theme du groupe #2</h1>
             <h2 class="bgc-text"> 4W4 - Conception d'interface <br>et developpement Web</h2>
             <h3 class="bgc-text"> TIM - College de Maisonneuve</h3>
-            
             <button class="buttonn_evenement">Evenements</button>
-        </header>
-        <div class="vague">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" style="fill:var(--couleur-arriere-accueil)"></path>
-            </svg>
-        </div>
+        </section>
+
+        <?php get_template_part("gabarit/vague"); ?>
         <div class="bouton"></div>
     </div>
     <div id="accueil" class="global">
@@ -89,11 +65,8 @@
             <h2>Évènement</h2> 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim illo, rem autem saepe est tempore quo vel, laborum veniam rerum nesciunt vero eos tenetur aliquid mollitia. Iusto aliquam consequuntur eius.</p>
         </section>
-        <div class="vague">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" style="fill:var(--couleur-arriere-footer)"></path>
-            </svg>
-        </div>
+    <?php get_template_part("gabarit/vague"); ?>
+
     </div>
     <div id="footer" class="global">
         <footer class="footer__section">

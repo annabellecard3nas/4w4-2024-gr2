@@ -16,11 +16,10 @@ body{
 .global{
     display: flex;
     justify-content: center;
-    min-height: 40vh;
+    
 }
 
 .global > section,
-.global > header,
 .global > footer{
 //flex :grow shrink basis
     flex: 0 1 900px;
@@ -31,8 +30,12 @@ body{
 
 }
 
-.global > header {
-    flex: 1;
+.entete__menu,.entete__header{
+    flex: 0 1 1500px;
+    position: relative;
+    padding: 1.5rem;
+   
+
 }
 
 #entete{
