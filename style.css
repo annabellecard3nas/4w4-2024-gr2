@@ -441,7 +441,7 @@ blockquote:hover {
 }
 @media screen and (min-width: 700px) {
   .menu-principal-container {
-    background: rgb(2, 49, 85);
+    background: rgb(2, 56, 98);
     position: static;
     transform: translateX(0%);
     width: 100vw;
