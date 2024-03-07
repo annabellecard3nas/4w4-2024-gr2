@@ -25,6 +25,9 @@ ce theme a ete developpe dans le cadre du cour 4w4
 /*regles de base*/
 /* ///////////////////////////////////////////*/
 @import "base/h";
+@import "base/bouton";
+@import "base/lien";
+@import "base/images";
 
 /* ///////////////////////////////////////////*/
 /*regles de pagination*/
@@ -38,7 +41,7 @@ ce theme a ete developpe dans le cadre du cour 4w4
 
 @import "effet/diagonal";
 
-@import "base/bouton";
+
 
 @import "citation";
 
@@ -46,10 +49,11 @@ ce theme a ete developpe dans le cadre du cour 4w4
 
 @import "footer";
 
-@import "base/lien";
 
-@import "base/images";
 
 @import "composant/recherche";
 @import "composant/sociaux";
 @import "composant/carte";
+@import "composant/menu";
+
+@import "utile/local";

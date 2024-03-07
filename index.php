@@ -17,11 +17,16 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="menu" class="global">
+        <div class="entete_menu">
+            <?php wp_nav_menu(); ?>
+        </div>
+    </div>
     <div id="entete" class="global">
         <header class="entete__header">
-            <h1>Theme du groupe #2</h1>
-            <h2>4W4 - Conception d'interface <br>et developpement Web</h2>
-            <h3>TIM - College de Maisonneuve</h3>
+            <h1 class="bgc-text">Theme du groupe #2</h1>
+            <h2 class="bgc-text"> 4W4 - Conception d'interface <br>et developpement Web</h2>
+            <h3 class="bgc-text"> TIM - College de Maisonneuve</h3>
             
             <button class="buttonn_evenement">Evenements</button>
         </header>
@@ -59,9 +64,9 @@
                 ?>
 
                 <div class="carte">
-                    <h5><?php echo $sigle; ?></h5>
-                    <h4><?php echo $nomCours; ?></h4>
-                    <h3><?php echo $tempCours; ?></h3>
+                    <h5><?=$sigle; ?></h5>
+                    <h4><?=$nomCours; ?></h4>
+                    <h3><?= trim($tempCours, "( )"); ?></h3>
                     <p><?php echo wp_trim_words(get_the_content(),30); ?></p>
                 </div>
             <?php endwhile; ?>

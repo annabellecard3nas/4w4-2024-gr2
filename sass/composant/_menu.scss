@@ -1,0 +1,13 @@
+.menu-cours-container{ //div
+border: 1px solid #aaa;
+}
+.menu{//ul
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    gap: 1rem;
+}
+.menu-item{//li
+    display: flex;
+    
+}

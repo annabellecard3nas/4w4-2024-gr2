@@ -4,14 +4,19 @@
     box-shadow: 5px 5px 12px -4px #000000;;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    flex:0 1 23%;
-    background-color: rgba(12, 47, 99, 0.829);
+    justify-content: center;
+    flex:0 1 25%;
+    background-color: rgba(9, 38, 73, 0.829);
     border-radius: 25px;
+}
+
+.carte *{
+    text-align: center;
 }
 
 .carte p{
     color: #fff;
+    
 }
 
 .section_cours{
