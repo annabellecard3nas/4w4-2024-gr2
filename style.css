@@ -74,7 +74,7 @@ ce theme a ete developpe dans le cadre du cour 4w4
   --_couleur-bouton-hover-2: hsl(var(--hu2),var(--s-couleur-arriere), 80%);
   --_couleur-bouton-text: hsl(var(--hu2),var(--s-couleur-arriere), 20%);
   --_couleur-bouton-2: hsl(var(--hu2),var(--s-couleur-arriere), 49%);
-  --_couleur-arriere-vague: hsl(var(--hu1), var(--s-couleur-arriere), 60%);
+  --_couleur-arriere-vague: hsl(var(--hu1),var(--s-couleur-arriere), 65%);
 }
 
 #accueil {
@@ -242,7 +242,6 @@ body {
 .entete__menu, .entete__header {
   flex: 0 1 1500px;
   position: relative;
-  padding: 1.5rem;
 }
 
 #entete {
@@ -426,7 +425,7 @@ blockquote:hover {
 }
 
 .menu-principal-container {
-  background: rgba(220, 220, 220, 0.297);
+  background: rgba(194, 193, 193, 0.297);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
@@ -435,14 +434,17 @@ blockquote:hover {
   transition: transform 0.2s;
   color: white;
   z-index: 1;
+  transform: translateX(-100%);
   position: absolute;
   top: 0;
   left: 0;
 }
 @media screen and (min-width: 700px) {
   .menu-principal-container {
+    background: rgba(4, 37, 62, 0.669);
     position: static;
-    translate: translateX(0);
+    transform: translateX(0%);
+    width: 100vw;
   }
 }
 
@@ -482,10 +484,10 @@ blockquote:hover {
 
 #chk_burger {
   display: none;
-  z-index: 3;
 }
 
 #burger {
+  z-index: 3;
   display: block;
   position: absolute;
   top: 0;
@@ -501,7 +503,7 @@ blockquote:hover {
   transform: translateX(0);
 }
 
-#chk_burger:checked {
+#chk_burger:checked ~ #burger {
   transform: rotate(45deg);
 }
 

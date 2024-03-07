@@ -9,9 +9,8 @@
             <h3 class="bgc-text"> TIM - College de Maisonneuve</h3>
             <button class="buttonn_evenement">Evenements</button>
         </section>
-
-        <?php get_template_part("gabarit/vague"); ?>
         <div class="bouton"></div>
+        <?php get_template_part("gabarit/vague"); ?>
     </div>
     <div id="accueil" class="global">
         <section class="accueil__section">
