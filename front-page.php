@@ -5,7 +5,7 @@
         <section class="entete__header">
                             <!-- facebook -->
             <h1 class="bgc-text"><?php echo get_bloginfo('name'); ?></h1>
-            <h1 class="bgc-text"><?php echo get_bloginfo('description'); ?></h1>
+            <h2 class="bgc-text"><?php echo get_bloginfo('description'); ?></h2>
             <h3 class="bgc-text"> TIM - College de Maisonneuve</h3>  
             <button class="buttonn_evenement">Evenements</button>  
         </section>
@@ -48,7 +48,18 @@
     <div id="evenement" class="global">
         <section class="evenement__section">
             <h2>Évènement</h2> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim illo, rem autem saepe est tempore quo vel, laborum veniam rerum nesciunt vero eos tenetur aliquid mollitia. Iusto aliquam consequuntur eius.</p>
+            <div class="div_evenement">
+                <?php $categories= get_categories() ; 
+                foreach( $categories as $category ) {?>
+                    <div class="carte">
+                        <h4><?= $category->name; ?></h4>
+                        <p><?=wp_trim_words($category->description, 10, '...');?></p>
+                        <p>Article: <?= $category->count; ?></p>
+                        <a href="<?= get_category_link($category->term_id); ?>">Voir la categorie</a>
+                    </div>
+                <?php }; ?>
+
+            </div>
         </section>
     <?php get_template_part("gabarit/vague"); ?>
 

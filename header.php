@@ -14,7 +14,7 @@
  </head>
 
  <body>
-     <div id="menu" class="global clr-agencement-primaire">
+     <div id="menu" class="global clr-agencement-primaire ">
          <?php echo get_custom_logo() ?>
          <!-- permet d ajouter un logo qui a ete mis dans le customizer -->
          <header class="entete__menu">

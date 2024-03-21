@@ -1,7 +1,7 @@
 .buttonn_evenement {
-  background-image: linear-gradient(#5E5DF0, #7a42b9);
+  background-image: linear-gradient(#1089b1, #084365);
   border-radius: 999px;
-  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-shadow: #1aadb8 0 10px 20px -10px;
   box-sizing: border-box;
   color: #FFFFFF;
   cursor: pointer;
@@ -21,8 +21,8 @@
 
 
   &:hover {
-    background-image: linear-gradient(rgb(129, 56, 197), rgb(42, 56, 183));
-    box-shadow: #5E5DF0 0 3px 15px 3px;
+    background-image: linear-gradient(rgb(239, 185, 25), rgb(199, 135, 6));
+    box-shadow: #f0cc55  0 3px 15px 3px;
     transform: translateY(-5px);
     
 

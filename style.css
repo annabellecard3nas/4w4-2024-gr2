@@ -274,7 +274,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 /* création de l'ensemble de règle de style d'agencement de couleurs */
 .clr-agencement-primaire {
   color: hsl(220, 100%, 85%);
-  background-image: linear-gradient(90deg, hsl(220, 100%, 15%), hsl(220, 100%, 60%));
+  background-image: linear-gradient(180deg, hsl(220, 100%, 15%), hsl(220, 100%, 60%));
 }
 
 .clr-agencement-secondaire {
@@ -315,21 +315,21 @@ https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjUwMHB4Iiwi
 https://developer.mozilla.org/en-US/docs/Web/CSS/clamp 
 */
 h1 {
-  font-size: clamp(1rem, 2.5vw, 2rem);
+  font-size: clamp(6rem, 2.5vw, 2rem);
   color: rgb(27, 77, 120);
 }
 
 h2 {
   font-size: clamp(1rem, -0.5714rem + 6.2857vw, 3.75rem);
-  color: rgb(52, 106, 153);
+  color: rgb(255, 255, 255);
 }
 #galerie h2 {
   color: white;
 }
 
 h3 {
-  font-size: clamp(1rem, 2.5vw, 1.8rem);
-  color: rgb(75, 149, 214);
+  font-size: clamp(2rem, 2.5vw, 1rem);
+  color: rgb(233, 233, 233);
 }
 
 h4 {
@@ -348,9 +348,9 @@ h6 {
 }
 
 .buttonn_evenement {
-  background-image: linear-gradient(#5E5DF0, #7a42b9);
+  background-image: linear-gradient(#1089b1, #084365);
   border-radius: 999px;
-  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-shadow: #1aadb8 0 10px 20px -10px;
   box-sizing: border-box;
   color: #FFFFFF;
   cursor: pointer;
@@ -369,8 +369,8 @@ h6 {
   transition: transform 0.2s;
 }
 .buttonn_evenement:hover {
-  background-image: linear-gradient(rgb(129, 56, 197), rgb(42, 56, 183));
-  box-shadow: #5E5DF0 0 3px 15px 3px;
+  background-image: linear-gradient(rgb(239, 185, 25), rgb(199, 135, 6));
+  box-shadow: #f0cc55 0 3px 15px 3px;
   transform: translateY(-5px);
 }
 a {
@@ -407,7 +407,7 @@ body {
 .global > footer {
   flex: 0 1 900px;
   padding: 5rem 1rem;
-  text-align: center;
+  text-align: left;
 }
 
 .entete__menu, .entete__header {
@@ -416,7 +416,10 @@ body {
 }
 
 #entete {
-  background-color: var(--couleur-arriere-entete);
+  background-image: url(./images/voyage.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 80%;
+  background-size: cover;
   color: var(--couleur-entete);
   position: relative;
 }
@@ -485,7 +488,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   padding-top: 3rem;
   gap: 3rem;
 }
@@ -579,14 +582,13 @@ body {
   border: 0;
 }
 
-.section__cours {
+.section__cours, .div_evenement {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
 }
 
 .carte {
-  border: 3px solid #aaa;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -594,8 +596,8 @@ body {
   align-items: center;
   flex: 1 0 20%;
   background-color: hsl(var(--hu1), var(--s-couleur-arriere), 75%);
-  background-color: beige;
-  border-radius: 10px;
+  background-color: rgba(2, 34, 68, 0.765);
+  border-radius: 15px;
 }
 .carte .post-categories {
   list-style-type: none;
@@ -612,11 +614,14 @@ body {
 
 .menu-principal-container {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 9.5rem;
+  right: 3rem;
   transform: translateX(0);
   transition: transform 0.5s ease-in-out;
   z-index: 1;
+  background-color: rgba(255, 255, 255, 0.3568627451);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 @media screen and (min-width: 700px) {
   .menu-principal-container {
@@ -642,7 +647,6 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   position: relative;
-  top: 8rem;
   z-index: 1;
   overflow: hidden;
 }
@@ -657,7 +661,7 @@ body {
 
 .menu-item {
   display: flex;
-  padding: 2rem;
+  margin: 1rem;
   position: relative;
   left: 1rem;
 }
@@ -665,7 +669,7 @@ body {
 .menu-item a {
   color: white;
   text-decoration: none;
-  font-weight: bolder;
+  font-weight: lighter;
   font-size: 1.2rem;
 }
 
@@ -689,4 +693,20 @@ body {
 
 #chk_burger {
   display: none;
+}
+
+blockquote {
+  background: rgba(226, 229, 231, 0.11);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 1.5rem 2rem 1.5rem 2rem;
+  transition: transform 0.2s;
+  color: white;
+}
+blockquote:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.309);
 }/*# sourceMappingURL=style.css.map */

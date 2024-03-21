@@ -25,7 +25,7 @@ body{
     flex: 0 1 900px;
     // background-color: rgba(#000, 0.05);
     padding: 5rem 1rem;
-    text-align: center;
+    text-align: left;
     
 
 }
@@ -38,7 +38,10 @@ body{
 }
 
 #entete{
-    background-color: var(--couleur-arriere-entete);
+    background-image: url(./images/voyage.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 80%;
+    background-size:cover;
     color: var(--couleur-entete);
     position: relative;
 }
