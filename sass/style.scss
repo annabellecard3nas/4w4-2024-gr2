@@ -1,59 +1,53 @@
-
 /*
-Theme Name: theme
+Theme Name: theme-gr2
 Theme URI: https://referenced.ca
-Author: annabelle lacombe cardenas
+Author: Eddy Martin
 Author URI: https://wordpress.org/
-Description: theme de base developpe dans le cours 4w4
-Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Description: Thème de base développé dans le cours 4W4
 Version: 1.0
-
 
 Requires PHP: 7.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: theme 
-ce theme a ete developpe dans le cadre du cour 4w4
+Text Domain: theme-gr2
+Ce thème a été développé dans le cadre du cours 4W4
 */
 
-/* ///////////////////////////////////////////*/
-/*variables css*/
-/* ///////////////////////////////////////////*/
-@import "variables";
+// https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 
-/* ///////////////////////////////////////////*/
-/*regles de base*/
-/* ///////////////////////////////////////////*/
+/* ////////////////////////////////////////// */
+/* Variables css                              */
+/* ////////////////////////////////////////// */
+@import "utile/couleurs";
+@import "utile/couleurs-class";
+
+/* ////////////////////////////////////////// */
+/* Class utile                            */
+/* ////////////////////////////////////////// */
+@import "utile/local";
+
+/* ////////////////////////////////////////// */
+/* règles de base                             */
+/* ////////////////////////////////////////// */
 @import "base/h";
 @import "base/bouton";
 @import "base/lien";
-@import "base/images";
-
-/* ///////////////////////////////////////////*/
-/*regles de pagination*/
-/* ///////////////////////////////////////////*/
+/* ////////////////////////////////////////// */
+/* règles de la pagination                             */
+/* ////////////////////////////////////////// */
 @import "layout";
 
-/* ///////////////////////////////////////////*/
-/*importer scss de vague*/
-/* ///////////////////////////////////////////*/
 @import "effet/vague";
 
 @import "effet/diagonal";
 
-
-
-@import "citation";
-
 @import "entete";
-
 @import "footer";
 
-
-
-@import "composant/recherche";
+/* ////////////////////////////////////////// */
+/* composants                             */
+/* ////////////////////////////////////////// */
 @import "composant/sociaux";
+@import "composant/recherche";
 @import "composant/carte";
 @import "composant/menu";
-
-@import "utile/local";
