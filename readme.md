@@ -23,5 +23,20 @@
     - Courte description de votre tp1
 
 
+
+
+# TP1 - Club de voyage
+
+### objectifs: 
+Créer un site web pour un club de voyage qui permettra de mettre en valeur les différentes destinations de voyage
+
+### Auteur : annabelle lacombe cardenas
+### Groupe : groupe 2
+
+### Description du projet: 
+faire une page web pour un  club de voyage qui donne les description de leurs destination
+
+### Liens URL:
+
 ### ma github page
 - github page: https://annabellecard3nas.github.io/4w4-2024-gr2/ 
