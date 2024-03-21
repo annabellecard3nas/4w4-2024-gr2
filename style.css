@@ -316,7 +316,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/clamp
 */
 h1 {
   font-size: clamp(6rem, 2.5vw, 2rem);
-  color: rgb(27, 77, 120);
+  color: rgb(26, 80, 127);
 }
 
 h2 {
